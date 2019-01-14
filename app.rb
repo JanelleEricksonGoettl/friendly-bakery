@@ -42,6 +42,19 @@ get "/cookies" do
   erb :cookies
 end
 # to muffins
+get "/muffins" do
+  erb :muffins
+end
+# to cakes
+get "/cakes" do
+  erb :cakes
+end
+
+get "/form" do
+  erb :form
+end
+
+
 
 # post "/catalog" do
 #   from = Sendgrid::Email.new(email: 'janelle.goettl@gmail.com')
