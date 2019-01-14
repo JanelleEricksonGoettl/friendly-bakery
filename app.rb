@@ -7,22 +7,29 @@ require "sendgrid-ruby"
 # understand how to construct new object from each class
 # start with one, and dry up hard-code with templates as necessary to maintain functionality while allowing for auto-population of catalog
 # define a random number price generator with floating numbers, but limit to reasonable price point
-# class Cookie
-#   def initialize(name, price, description)
-#     @name = name
-#     @price = price
-#     @description = description
-#   end
-# end 
+class Cookie
+  def initialize(name, price, description)
+    @name = name
+    @price = price
+    @description = description
+  end
+end 
 
-# class Muffin
-#   # added
-#   # def
-# end 
+class Muffin
+  def initialize(name, price, description)
+    @name = name
+    @price = price
+    @description = description
+  end
+end 
 
-# class Cake
-#   # def
-# end 
+class Cake
+  def initialize(name, price, description)
+    @name = name
+    @price = price
+    @description = description
+  end
+end 
 
 # endpoints
 # to index
@@ -30,8 +37,10 @@ get "/" do
   erb :index
 end
 
-
 # to cookies
+get "/cookies" do
+  erb :cookies
+end
 # to muffins
 
 # post "/catalog" do
