@@ -9,16 +9,16 @@
 <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 </head>
 <body>
-  <header>
-    <h1>Tall Girl Bakery</h1>
+  <header class="alert-danger">
+    <h1 class="display-1 text-center">Tall Girl Bakery</h1>
   </header>
 
 
-  <nav>
-    <a href="/">Home</a>
-    <a href="/cookies">Cookies</a>
-    <a href="/muffins">Muffins</a>
-    <a href="/cakes">Cakes</a>
+  <nav class="alert-info text-center">
+    <button class="alert-info btn-lg"><a href="/">Home</a></button>
+    <button class="alert-info btn-lg"><a href="/cookies">Cookies</a></button>
+    <button class="alert-info btn-lg"><a href="/muffins">Muffins</a></button>
+    <button class="alert-info btn-lg"><a href="/cakes">Cakes</a></button>
   </nav>
 
 
@@ -26,11 +26,14 @@
   <%= yield %>
 
   <footer>
-
-    
-    <p> copywrong 2019 </p>
+    <address class="text-center">
+      <strong>Tall Girl Bakery, LLC.</strong><br>
+      1987 Gender Blvd.<br>
+      Brooklyn, NY  11269<br>
+    </address>
+    <p class="text-center"> copywrong 2019 </p>
   </footer>
-  
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
